@@ -8,15 +8,34 @@
 import UIKit
 
 
-class HeroesCollectionViewController: UICollectionViewController {
-
+final class HeroesCollectionViewController: UICollectionViewController {
+    
+    private let networkManager = NetworkManager.shared
+    private var superheroes: [Superhero] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
+        fetchData()
     }
+}
+//MARK: - Networking
+private extension HeroesCollectionViewController {
+    func fetchData() {
+        networkManager.fetchData { [weak self] result in
+            switch result {
+            case .success(let data):
+                self?.superheroes = data
+                self?.collectionView.reloadData()
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+    }
+}
 
-    // MARK: UICollectionViewDataSource
+// MARK: UICollectionViewDataSource
+extension HeroesCollectionViewController {
+    
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -26,49 +45,18 @@ class HeroesCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 10
+        return superheroes.count
     }
     
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "superhero", for: indexPath) as! CollectionViewCell
-        cell.mainLabel.text = "Next Label"
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "hero", for: indexPath) as! HeroCell
+        let hero = superheroes[indexPath.row]
+        cell.configure(superhero: hero)
         
     
         // Configure the cell
     
         return cell
     }
-
-    // MARK: UICollectionViewDelegate
-
-    /*
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
-    override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment this method to specify if the specified item should be selected
-    override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-    override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
-    
-    }
-    */
-
 }
