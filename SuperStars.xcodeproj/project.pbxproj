@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		80B2B17829D56EFD00C42CFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B2B17729D56EFD00C42CFD /* AppDelegate.swift */; };
 		80B2B17A29D56EFD00C42CFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B2B17929D56EFD00C42CFD /* SceneDelegate.swift */; };
-		80B2B17C29D56EFD00C42CFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B2B17B29D56EFD00C42CFD /* ViewController.swift */; };
 		80B2B17F29D56EFD00C42CFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80B2B17D29D56EFD00C42CFD /* Main.storyboard */; };
 		80B2B18129D56F0000C42CFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80B2B18029D56F0000C42CFD /* Assets.xcassets */; };
 		80B2B18429D56F0000C42CFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80B2B18229D56F0000C42CFD /* LaunchScreen.storyboard */; };
+		80B2B19329D5710900C42CFD /* HeroesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B2B19229D5710900C42CFD /* HeroesCollectionViewController.swift */; };
+		80B2B19729D5747200C42CFD /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B2B19629D5747200C42CFD /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		80B2B17429D56EFD00C42CFD /* SuperStars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperStars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80B2B17729D56EFD00C42CFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80B2B17929D56EFD00C42CFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		80B2B17B29D56EFD00C42CFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		80B2B17E29D56EFD00C42CFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		80B2B18029D56F0000C42CFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80B2B18329D56F0000C42CFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80B2B18529D56F0000C42CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80B2B19229D5710900C42CFD /* HeroesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesCollectionViewController.swift; sourceTree = "<group>"; };
+		80B2B19629D5747200C42CFD /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,72 @@
 		80B2B17629D56EFD00C42CFD /* SuperStars */ = {
 			isa = PBXGroup;
 			children = (
-				80B2B17729D56EFD00C42CFD /* AppDelegate.swift */,
-				80B2B17929D56EFD00C42CFD /* SceneDelegate.swift */,
-				80B2B17B29D56EFD00C42CFD /* ViewController.swift */,
-				80B2B17D29D56EFD00C42CFD /* Main.storyboard */,
-				80B2B18029D56F0000C42CFD /* Assets.xcassets */,
-				80B2B18229D56F0000C42CFD /* LaunchScreen.storyboard */,
-				80B2B18529D56F0000C42CFD /* Info.plist */,
+				80B2B19129D570E900C42CFD /* Views */,
+				80B2B19029D56F6B00C42CFD /* Services */,
+				80B2B18F29D56F5F00C42CFD /* Models */,
+				80B2B18B29D56F1F00C42CFD /* App */,
+				80B2B18E29D56F5000C42CFD /* ViewControllers */,
+				80B2B18D29D56F4300C42CFD /* Storyboards */,
+				80B2B18C29D56F3000C42CFD /* Resources */,
 			);
 			path = SuperStars;
+			sourceTree = "<group>";
+		};
+		80B2B18B29D56F1F00C42CFD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				80B2B17929D56EFD00C42CFD /* SceneDelegate.swift */,
+				80B2B17729D56EFD00C42CFD /* AppDelegate.swift */,
+				80B2B18529D56F0000C42CFD /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		80B2B18C29D56F3000C42CFD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				80B2B18029D56F0000C42CFD /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		80B2B18D29D56F4300C42CFD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				80B2B17D29D56EFD00C42CFD /* Main.storyboard */,
+				80B2B18229D56F0000C42CFD /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		80B2B18E29D56F5000C42CFD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				80B2B19229D5710900C42CFD /* HeroesCollectionViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		80B2B18F29D56F5F00C42CFD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		80B2B19029D56F6B00C42CFD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		80B2B19129D570E900C42CFD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				80B2B19629D5747200C42CFD /* CollectionViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +197,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80B2B17C29D56EFD00C42CFD /* ViewController.swift in Sources */,
+				80B2B19329D5710900C42CFD /* HeroesCollectionViewController.swift in Sources */,
 				80B2B17829D56EFD00C42CFD /* AppDelegate.swift in Sources */,
+				80B2B19729D5747200C42CFD /* CollectionViewCell.swift in Sources */,
 				80B2B17A29D56EFD00C42CFD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,7 +349,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7VP863SW97;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SuperStars/Info.plist;
+				INFOPLIST_FILE = SuperStars/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +377,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7VP863SW97;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SuperStars/Info.plist;
+				INFOPLIST_FILE = SuperStars/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
