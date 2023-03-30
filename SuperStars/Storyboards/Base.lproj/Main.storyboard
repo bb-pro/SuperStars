@@ -70,23 +70,51 @@
             </objects>
             <point key="canvasLocation" x="1144.1860465116279" y="40.557939914163093"/>
         </scene>
-        <!--View Controller-->
+        <!--Hero Detail View Controller-->
         <scene sceneID="ksa-LZ-Q5C">
             <objects>
-                <viewController id="y8h-XA-ba0" sceneMemberID="viewController">
+                <viewController id="y8h-XA-ba0" customClass="HeroDetailViewController" customModule="SuperStars" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iwn-7e-RYO">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="863"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CWE-tG-eJ6">
-                                <rect key="frame" x="20" y="109" width="390" height="305"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="67" translatesAutoresizingMaskIntoConstraints="NO" id="2yW-80-8KI">
+                                <rect key="frame" x="20" y="109" width="390" height="704"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CWE-tG-eJ6">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="305"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="305" id="lkt-oB-65C"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4vs-Az-vy2">
+                                        <rect key="frame" x="34" y="372" width="322" height="332"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <color key="textColor" systemColor="systemRedColor"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="4vs-Az-vy2" firstAttribute="leading" secondItem="2yW-80-8KI" secondAttribute="leading" constant="34" id="fB0-NS-BiW"/>
+                                    <constraint firstItem="CWE-tG-eJ6" firstAttribute="leading" secondItem="2yW-80-8KI" secondAttribute="leadingMargin" id="tze-4y-yrT"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="M6O-7F-J4H"/>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2yW-80-8KI" firstAttribute="top" secondItem="M6O-7F-J4H" secondAttribute="top" constant="50" id="VTW-cA-5tH"/>
+                            <constraint firstItem="2yW-80-8KI" firstAttribute="leading" secondItem="M6O-7F-J4H" secondAttribute="leading" constant="20" id="YSf-a8-Tex"/>
+                            <constraint firstItem="M6O-7F-J4H" firstAttribute="trailing" secondItem="2yW-80-8KI" secondAttribute="trailing" constant="20" id="hwB-H6-Laj"/>
+                            <constraint firstItem="M6O-7F-J4H" firstAttribute="bottom" secondItem="2yW-80-8KI" secondAttribute="bottom" constant="50" id="w2C-Ly-RJ1"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8F7-wQ-TMs"/>
+                    <connections>
+                        <outlet property="imageView" destination="CWE-tG-eJ6" id="fXA-jI-G0U"/>
+                        <outlet property="textView" destination="4vs-Az-vy2" id="eH4-aL-h0a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kLH-0p-cJc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

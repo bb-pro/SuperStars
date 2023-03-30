@@ -17,6 +17,12 @@ final class HeroesCollectionViewController: UICollectionViewController {
         super.viewDidLoad()
         fetchData()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let indexPath = collectionView.indexPathsForSelectedItems?.first else { return }
+        guard let infoVC = segue.destination as? HeroDetailViewController else { return }
+        infoVC.superhero = superheroes[indexPath.item]
+    }
 }
 //MARK: - Networking
 private extension HeroesCollectionViewController {
