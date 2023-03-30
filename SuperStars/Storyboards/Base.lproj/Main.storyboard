@@ -78,18 +78,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="863"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CWE-tG-eJ6">
-                                <rect key="frame" x="20" y="109" width="390" height="654"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CWE-tG-eJ6">
+                                <rect key="frame" x="20" y="109" width="390" height="305"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="M6O-7F-J4H"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="M6O-7F-J4H" firstAttribute="trailing" secondItem="CWE-tG-eJ6" secondAttribute="trailing" constant="20" id="6bS-tN-hDX"/>
-                            <constraint firstItem="CWE-tG-eJ6" firstAttribute="leading" secondItem="M6O-7F-J4H" secondAttribute="leading" constant="20" id="GzL-Bv-46S"/>
-                            <constraint firstItem="M6O-7F-J4H" firstAttribute="bottom" secondItem="CWE-tG-eJ6" secondAttribute="bottom" constant="100" id="HaW-p4-Te4"/>
-                            <constraint firstItem="CWE-tG-eJ6" firstAttribute="top" secondItem="M6O-7F-J4H" secondAttribute="top" constant="50" id="tOh-ww-NY8"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8F7-wQ-TMs"/>
                 </viewController>
