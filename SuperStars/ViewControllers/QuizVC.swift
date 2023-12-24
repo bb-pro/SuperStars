@@ -7,6 +7,7 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 final class QuizVC: BaseViewController {
 
     @IBOutlet var numberLabel: UILabel!

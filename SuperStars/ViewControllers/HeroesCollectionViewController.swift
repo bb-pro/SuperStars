@@ -8,6 +8,7 @@
 import UIKit
 
 
+@available(iOS 13.0, *)
 final class HeroesCollectionViewController: UICollectionViewController {
     
     private let networkManager = NetworkManager.shared
@@ -21,26 +22,8 @@ final class HeroesCollectionViewController: UICollectionViewController {
     override func viewWillAppear(_ animated: Bool) {
         title = "Choose Your Hero"
     }
-}
-//MARK: - Networking
-private extension HeroesCollectionViewController {
-    func fetchData() {
-        networkManager.fetchData { [weak self] result in
-            switch result {
-            case .success(let data):
-                self?.superheroes = data
-                self?.collectionView.reloadData()
-            case .failure(let error):
-                print(error.localizedDescription)
-            }
-        }
-    }
-}
-
-// MARK: UICollectionViewDataSource
-extension HeroesCollectionViewController {
     
-
+    // MARK: UICollectionViewDataSource
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -67,3 +50,19 @@ extension HeroesCollectionViewController {
         self.navigationController?.pushViewController(cardVC, animated: true)
     }
 }
+//MARK: - Networking
+@available(iOS 13.0, *)
+private extension HeroesCollectionViewController {
+    func fetchData() {
+        networkManager.fetchData { [weak self] result in
+            switch result {
+            case .success(let data):
+                self?.superheroes = data
+                self?.collectionView.reloadData()
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+    }
+}
+

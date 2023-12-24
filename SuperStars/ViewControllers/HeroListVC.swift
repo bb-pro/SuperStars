@@ -7,6 +7,7 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 final class HeroListVC: BaseViewController {
 
     @IBOutlet var tableView: UITableView!
@@ -27,6 +28,7 @@ final class HeroListVC: BaseViewController {
 }
 
 //MARK: - Networking
+@available(iOS 13.0, *)
 private extension HeroListVC {
     func fetchData() {
         networkManager.fetchData { [weak self] result in
@@ -41,6 +43,7 @@ private extension HeroListVC {
     }
 }
 
+@available(iOS 13.0, *)
 extension HeroListVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return superheroes.count
