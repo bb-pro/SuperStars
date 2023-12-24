@@ -2,7 +2,7 @@
 //  HeroesCollectionViewController.swift
 //  SuperStars
 //
-//  Created by Bektemur Mamashayev on 30/03/23.
+//  Created by Bektemur Mamashayev on 24/12/2023. 
 //
 
 import UIKit
@@ -18,10 +18,8 @@ final class HeroesCollectionViewController: UICollectionViewController {
         fetchData()
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let indexPath = collectionView.indexPathsForSelectedItems?.first else { return }
-        guard let infoVC = segue.destination as? HeroDetailViewController else { return }
-        infoVC.superhero = superheroes[indexPath.item]
+    override func viewWillAppear(_ animated: Bool) {
+        title = "Choose Your Hero"
     }
 }
 //MARK: - Networking
@@ -59,10 +57,13 @@ extension HeroesCollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "hero", for: indexPath) as! HeroCell
         let hero = superheroes[indexPath.row]
         cell.configure(superhero: hero)
-        
-    
-        // Configure the cell
-    
         return cell
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cardVC = storyboard?.instantiateViewController(identifier: "HeroCardVC") as! HeroCardVC
+        cardVC.superHero = superheroes[indexPath.item]
+        cardVC.navigationItem.title = superheroes[indexPath.item].name
+        self.navigationController?.pushViewController(cardVC, animated: true)
     }
 }

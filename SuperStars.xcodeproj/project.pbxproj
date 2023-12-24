@@ -12,6 +12,15 @@
 		80337CBD29D589DC0027B9CD /* Superhero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80337CBC29D589DC0027B9CD /* Superhero.swift */; };
 		80337CC029D58A0E0027B9CD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 80337CBF29D58A0E0027B9CD /* Alamofire */; };
 		80337CC229D5C5B90027B9CD /* HeroDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80337CC129D5C5B90027B9CD /* HeroDetailViewController.swift */; };
+		808278782B36C9D900984B1B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808278712B36C9D000984B1B /* TabBarController.swift */; };
+		808278792B36C9D900984B1B /* MyColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808278702B36C9D000984B1B /* MyColors.swift */; };
+		8082787A2B36C9D900984B1B /* Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8082786E2B36C9D000984B1B /* Nib.swift */; };
+		8082787B2B36C9D900984B1B /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8082786F2B36C9D000984B1B /* OnboardingViewController.swift */; };
+		8082787C2B36C9D900984B1B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8082786D2B36C9D000984B1B /* BaseViewController.swift */; };
+		8082787D2B36C9DE00984B1B /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808278762B36C9D000984B1B /* CustomImageView.swift */; };
+		8082787E2B36C9DE00984B1B /* CustomViewWithShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808278772B36C9D000984B1B /* CustomViewWithShadow.swift */; };
+		8082787F2B36C9E300984B1B /* Ex+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808278752B36C9D000984B1B /* Ex+String.swift */; };
+		808278802B36C9E300984B1B /* Ex+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808278742B36C9D000984B1B /* Ex+UIView.swift */; };
 		80B2B17829D56EFD00C42CFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B2B17729D56EFD00C42CFD /* AppDelegate.swift */; };
 		80B2B17A29D56EFD00C42CFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B2B17929D56EFD00C42CFD /* SceneDelegate.swift */; };
 		80B2B17F29D56EFD00C42CFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80B2B17D29D56EFD00C42CFD /* Main.storyboard */; };
@@ -19,12 +28,29 @@
 		80B2B18429D56F0000C42CFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80B2B18229D56F0000C42CFD /* LaunchScreen.storyboard */; };
 		80B2B19329D5710900C42CFD /* HeroesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B2B19229D5710900C42CFD /* HeroesCollectionViewController.swift */; };
 		80B2B19729D5747200C42CFD /* HeroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B2B19629D5747200C42CFD /* HeroCell.swift */; };
+		80DF99D92B386D6E00025A66 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DF99D82B386D6E00025A66 /* Quiz.swift */; };
+		80DF99DB2B38708D00025A66 /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DF99DA2B38708D00025A66 /* InfoCell.swift */; };
+		80DF99DD2B3870C900025A66 /* HeroListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DF99DC2B3870C900025A66 /* HeroListVC.swift */; };
+		80DF99DF2B38720600025A66 /* Ex+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DF99DE2B38720600025A66 /* Ex+UIImageView.swift */; };
+		80DF99E12B38792D00025A66 /* HeroCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DF99E02B38792D00025A66 /* HeroCardVC.swift */; };
+		80DF99E32B38835A00025A66 /* QuizOnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DF99E22B38835A00025A66 /* QuizOnboardingVC.swift */; };
+		80DF99E52B38836B00025A66 /* QuizVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DF99E42B38836B00025A66 /* QuizVC.swift */; };
+		80DF99E72B3889D300025A66 /* ResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DF99E62B3889D300025A66 /* ResultVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		80337CBA29D589720027B9CD /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		80337CBC29D589DC0027B9CD /* Superhero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Superhero.swift; sourceTree = "<group>"; };
 		80337CC129D5C5B90027B9CD /* HeroDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailViewController.swift; sourceTree = "<group>"; };
+		8082786D2B36C9D000984B1B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		8082786E2B36C9D000984B1B /* Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nib.swift; sourceTree = "<group>"; };
+		8082786F2B36C9D000984B1B /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		808278702B36C9D000984B1B /* MyColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyColors.swift; sourceTree = "<group>"; };
+		808278712B36C9D000984B1B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		808278742B36C9D000984B1B /* Ex+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ex+UIView.swift"; sourceTree = "<group>"; };
+		808278752B36C9D000984B1B /* Ex+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ex+String.swift"; sourceTree = "<group>"; };
+		808278762B36C9D000984B1B /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		808278772B36C9D000984B1B /* CustomViewWithShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewWithShadow.swift; sourceTree = "<group>"; };
 		80B2B17429D56EFD00C42CFD /* SuperStars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperStars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80B2B17729D56EFD00C42CFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80B2B17929D56EFD00C42CFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +60,14 @@
 		80B2B18529D56F0000C42CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80B2B19229D5710900C42CFD /* HeroesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesCollectionViewController.swift; sourceTree = "<group>"; };
 		80B2B19629D5747200C42CFD /* HeroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCell.swift; sourceTree = "<group>"; };
+		80DF99D82B386D6E00025A66 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		80DF99DA2B38708D00025A66 /* InfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
+		80DF99DC2B3870C900025A66 /* HeroListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroListVC.swift; sourceTree = "<group>"; };
+		80DF99DE2B38720600025A66 /* Ex+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ex+UIImageView.swift"; sourceTree = "<group>"; };
+		80DF99E02B38792D00025A66 /* HeroCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCardVC.swift; sourceTree = "<group>"; };
+		80DF99E22B38835A00025A66 /* QuizOnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizOnboardingVC.swift; sourceTree = "<group>"; };
+		80DF99E42B38836B00025A66 /* QuizVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizVC.swift; sourceTree = "<group>"; };
+		80DF99E62B3889D300025A66 /* ResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +83,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8082786C2B36C9D000984B1B /* Containers */ = {
+			isa = PBXGroup;
+			children = (
+				8082786D2B36C9D000984B1B /* BaseViewController.swift */,
+				8082786E2B36C9D000984B1B /* Nib.swift */,
+				8082786F2B36C9D000984B1B /* OnboardingViewController.swift */,
+				808278702B36C9D000984B1B /* MyColors.swift */,
+				808278712B36C9D000984B1B /* TabBarController.swift */,
+			);
+			path = Containers;
+			sourceTree = "<group>";
+		};
+		808278722B36C9D000984B1B /* CustomViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				808278732B36C9D000984B1B /* Extensions */,
+				808278762B36C9D000984B1B /* CustomImageView.swift */,
+				808278772B36C9D000984B1B /* CustomViewWithShadow.swift */,
+			);
+			path = CustomViewComponents;
+			sourceTree = "<group>";
+		};
+		808278732B36C9D000984B1B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				808278742B36C9D000984B1B /* Ex+UIView.swift */,
+				808278752B36C9D000984B1B /* Ex+String.swift */,
+				80DF99DE2B38720600025A66 /* Ex+UIImageView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		80B2B16B29D56EFD00C42CFD = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +141,8 @@
 				80B2B18E29D56F5000C42CFD /* ViewControllers */,
 				80B2B18D29D56F4300C42CFD /* Storyboards */,
 				80B2B18C29D56F3000C42CFD /* Resources */,
+				8082786C2B36C9D000984B1B /* Containers */,
+				808278722B36C9D000984B1B /* CustomViewComponents */,
 			);
 			path = SuperStars;
 			sourceTree = "<group>";
@@ -110,7 +178,12 @@
 			isa = PBXGroup;
 			children = (
 				80B2B19229D5710900C42CFD /* HeroesCollectionViewController.swift */,
+				80DF99DC2B3870C900025A66 /* HeroListVC.swift */,
 				80337CC129D5C5B90027B9CD /* HeroDetailViewController.swift */,
+				80DF99E02B38792D00025A66 /* HeroCardVC.swift */,
+				80DF99E22B38835A00025A66 /* QuizOnboardingVC.swift */,
+				80DF99E42B38836B00025A66 /* QuizVC.swift */,
+				80DF99E62B3889D300025A66 /* ResultVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -119,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				80337CBC29D589DC0027B9CD /* Superhero.swift */,
+				80DF99D82B386D6E00025A66 /* Quiz.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -135,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				80B2B19629D5747200C42CFD /* HeroCell.swift */,
+				80DF99DA2B38708D00025A66 /* InfoCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -219,12 +294,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				80B2B19329D5710900C42CFD /* HeroesCollectionViewController.swift in Sources */,
+				80DF99E72B3889D300025A66 /* ResultVC.swift in Sources */,
+				8082787A2B36C9D900984B1B /* Nib.swift in Sources */,
+				808278782B36C9D900984B1B /* TabBarController.swift in Sources */,
+				80DF99DF2B38720600025A66 /* Ex+UIImageView.swift in Sources */,
 				80B2B17829D56EFD00C42CFD /* AppDelegate.swift in Sources */,
 				80337CC229D5C5B90027B9CD /* HeroDetailViewController.swift in Sources */,
+				80DF99DB2B38708D00025A66 /* InfoCell.swift in Sources */,
+				80DF99E12B38792D00025A66 /* HeroCardVC.swift in Sources */,
+				8082787C2B36C9D900984B1B /* BaseViewController.swift in Sources */,
+				80DF99DD2B3870C900025A66 /* HeroListVC.swift in Sources */,
 				80337CBB29D589720027B9CD /* NetworkManager.swift in Sources */,
 				80B2B19729D5747200C42CFD /* HeroCell.swift in Sources */,
 				80B2B17A29D56EFD00C42CFD /* SceneDelegate.swift in Sources */,
+				808278792B36C9D900984B1B /* MyColors.swift in Sources */,
+				80DF99E32B38835A00025A66 /* QuizOnboardingVC.swift in Sources */,
+				8082787B2B36C9D900984B1B /* OnboardingViewController.swift in Sources */,
+				808278802B36C9E300984B1B /* Ex+UIView.swift in Sources */,
+				8082787E2B36C9DE00984B1B /* CustomViewWithShadow.swift in Sources */,
+				80DF99E52B38836B00025A66 /* QuizVC.swift in Sources */,
+				80DF99D92B386D6E00025A66 /* Quiz.swift in Sources */,
 				80337CBD29D589DC0027B9CD /* Superhero.swift in Sources */,
+				8082787F2B36C9E300984B1B /* Ex+String.swift in Sources */,
+				8082787D2B36C9DE00984B1B /* CustomImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

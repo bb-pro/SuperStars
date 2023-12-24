@@ -2,7 +2,7 @@
 //  HeroDetailViewController.swift
 //  SuperStars
 //
-//  Created by Bektemur Mamashayev on 30/03/23.
+//  Created by Bektemur Mamashayev on 24/12/2023. 
 //
 
 import UIKit
@@ -35,14 +35,34 @@ class HeroDetailViewController: UIViewController {
         textView.text = """
                                 Biography
                         
-                        Name:   \(superhero.biography.fullName)
-                        
+                        Full Name:   \(superhero.biography.fullName)
+
                         Place of birth:   \(superhero.biography.placeOfBirth)
                         
                         First Appearence:   \(superhero.biography.firstAppearance)
                         
                         Allieses:   \(superhero.biography.aliases)
+                        
+                        Alter egos: \(superhero.biography.alterEgos)
                         """
+    }
+    
+    @IBAction func copyPressed() {
+        // Get the text from the UITextView
+        guard let textToCopy = textView.text else { return }
+
+        // Check if there is any text to copy
+        guard !textToCopy.isEmpty else {
+            return
+        }
+
+        // Copy the text to the clipboard
+        UIPasteboard.general.string = textToCopy
+
+        // Optionally, provide feedback to the user (e.g., display an alert)
+        let alert = UIAlertController(title: "Text Copied", message: "The text has been copied to the clipboard.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
     }
 
 }
